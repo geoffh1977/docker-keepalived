@@ -1,0 +1,21 @@
+image: geoffh1977/keepalived:2.0.19
+manifests:
+  - image: geoffh1977/keepalived:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: geoffh1977/keepalived:arm32v5
+    platform:
+      architecture: arm
+      os: linux
+      variant: v5
+  - image: geoffh1977/keepalived:arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
+  - image: geoffh1977/keepalived:arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
