@@ -8,8 +8,8 @@ manifests:
     platform:
       architecture: arm
       os: linux
-      variant: v5
-  - image: geoffh1977/keepalived:arm32v7
+      variant: v6
+  - image: geoffh1977/keepalived:arm32v6
     platform:
       architecture: arm
       os: linux
