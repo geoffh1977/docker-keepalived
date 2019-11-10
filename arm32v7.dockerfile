@@ -29,8 +29,8 @@ RUN apk upgrade --no-cache --update && \
     rm -rf "keepalived-${KEEPALIVED_VERSION}" /tmp/keepalive.tar.gz && \
     apk del .build-deps
 
-COPY config/keepalived.conf.template /etc/keepalived/
-COPY config/start.sh /usr/local/bin/
+COPY files/keepalived.conf.template /etc/keepalived/
+COPY files/start.sh /usr/local/bin/
 RUN chmod 0755 /usr/local/bin/start.sh
 
 ENTRYPOINT ["tini", "--"]

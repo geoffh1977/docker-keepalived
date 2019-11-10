@@ -1,0 +1,9 @@
+---
+namespace: keepalived
+
+commonLabels:
+  application: keepalived
+
+resources:
+  - namespace.yaml
+  - daemonset.yaml
