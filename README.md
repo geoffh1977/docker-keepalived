@@ -16,10 +16,10 @@ All these details are placed in a templated kubealived config file and the servi
 ## Configuration
 A Kubernetes manifest is contained within the Github repository with an example of how to set up the container. The container has 4 configurable Environment variables, each of which will be populated automtically if they re not set at runtime. The variables are:
 
-**INTERFACE -** The interface which keepalived will be running on. If not populated, the primary interface (routing 0.0.0.0) will be selected.
-**ROUTE_ID -** The Virtual Router ID for keepalived, a number between 1 and 255. The 4th number of the IP address will be used if not set.
-**PASSWORD -** The password keepalived uses to sync on the network. This should be set the same for all the keepalived instances in a cluster. A random password is generated if not set.
-**VIRTUAL_IP -** The Virtual IP to use on with keepalived. This is simply set to 192168.1.250 by default.
+- **INTERFACE -** The interface which keepalived will be running on. If not populated, the primary interface (routing 0.0.0.0) will be selected.
+- **ROUTE_ID -** The Virtual Router ID for keepalived, a number between 1 and 255. The 4th number of the IP address will be used if not set.
+- **PASSWORD -** The password keepalived uses to sync on the network. This should be set the same for all the keepalived instances in a cluster. A random password is generated if not set.
+- **VIRTUAL_IP -** The Virtual IP to use on with keepalived. This is simply set to 192168.1.250 by default.
 
 For a cluster to be formed correctly, the **PASSWORD** variable (at a minimum) must be set so the cluster can operate. An example of a docker command to run keepalived work look something like:
 
