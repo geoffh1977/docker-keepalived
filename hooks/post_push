@@ -25,3 +25,4 @@ then
   ./manifest-tool push from-spec manifest.yaml
 fi
 
+rm -f ./manifest-tool
