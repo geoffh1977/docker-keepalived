@@ -1,5 +1,5 @@
 # Keepalived Docker Image
-![Keepalived Logo](https://raw.githubusercontent.com/geoffh1977/docker-keepalived/master/iles/keepalived.png  "Keepalived Logo")
+![Keepalived Logo](https://github.com/geoffh1977/docker-keepalived/raw/master/files/keepalived.png  "Keepalived Logo")
 
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/geoffh1977/keepalived.svg?style=plastic) ![Keepalived Badge](https://img.shields.io/badge/Keepalived-v2.0.19-eba935.svg?style=plastic)
 
