@@ -9,7 +9,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: keepalived
+      application: keepalived
   updateStrategy:
     type: RollingUpdate
   template:
