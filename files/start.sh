@@ -2,7 +2,7 @@
 
 # Grab The Default Routing Interface And Interface IP
 export INTERFACE=${INTERFACE:-$(route -n | grep ^0.0.0.0 | awk '{print $8}')}
-export INTERFACE_IP=${IP:-$(ip addr show dev "${INTERFACE}" | grep "inet " | awk '{print $2}' | cut -d"/" -f1)}
+export INTERFACE_IP=${IP:-$(ip addr show dev "${INTERFACE}" | grep "inet " |  grep "brd " | awk '{print $2}' | cut -d"/" -f1)}
 
 # Use The 4th Octet Of The IP As The Routing ID
 export ROUTE_ID=${ROUTE_ID:-$(echo "${INTERFACE_IP}" | cut -d"." -f 4)}
